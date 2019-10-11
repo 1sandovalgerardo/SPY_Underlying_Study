@@ -249,6 +249,23 @@ def SeasonCorrTest(dataDict, dropNum, n):
         print(f'{stock} completed')
     return request
         
+def JustDaysCorrelated(data):
+    '''
+    Input: returned item from func: SeasonCorrTest()
+    Output: dictionary. Key=stock, value= pd.series of the days
+        that had high correlation. High correlation was established in 
+        SeasonCorrTest()
+    '''
+    request = {}
+    for stock in data:
+        days = []
+        for n in range(len(data[stock].index)):
+            a, b, c = data[stock].index[n]
+            days.append(b)
+        days = list(set(days))
+        days.sort()
+        request[stock] = days
+    return request
         
 def CycleRollingCharts(data):
     '''
