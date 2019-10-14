@@ -196,7 +196,7 @@ def CorrOverN(data, n):
     if type(n) == list:
         Ns = []
         for item in n:
-            Ns.appen(item)
+            Ns.append(item)
         test = (data>Ns[0]) | (data<Ns[1])
         return data[test]
     else:
@@ -205,12 +205,13 @@ def CorrOverN(data, n):
     
 def CorrelationTest(data, r):
     '''
+    Purpose: a test to see if there is any correlation in the data by year.
     Input Type: pd.DataFrame
     Input: DataFrame that was the output of the an output of the byStockAndYear function.
         DataFrame must be for a single stock. 
     Output: The instances in which the correlation was >= or <= to r.
         All corr values of 1 are excluded.
-    Purpose: a test to see if there is any correlation in the data by year.
+    
     '''
     data = data.corr() 
     test = ((data >= r) | (data <= -r)) & (data != 1)
@@ -246,10 +247,11 @@ def SeasonCorrTest(dataDict, dropNum, n):
         test = (((df >= n) | (df <= -n)) & (df < 0.99))
         request[stock] = df[test].unstack(level=0).dropna(axis=1, thresh=dropNum)\
                             .unstack().dropna()
-        print(f'{stock} completed')
+        #print(f'{stock} completed', end='|')
     return request
-        
-def JustDaysCorrelated(data):
+
+# previously JustDaysCorrelated
+def HighCorrDays(data):
     '''
     Input: returned item from func: SeasonCorrTest()
     Output: dictionary. Key=stock, value= pd.series of the days
@@ -266,7 +268,90 @@ def JustDaysCorrelated(data):
         days.sort()
         request[stock] = days
     return request
+
+def RollCorr(data, period):
+    '''
+    input: data=dictionary containing dataframes, period=window to use for rolling periods.
+    output: dictionary. Key=keys of data, value=pd.DataFrame, value columns=calendar years, 
+        value index=int in range(1,len of original data). This func 
+        removes the datetime index type.
+    '''
+    request = {}
+    for stock in data:
+        request[stock] = data[stock].rolling(window=period)\
+                                    .corr().dropna()
+    return request
+
+def PctReturnForDays(data, pxData, periods):
+    '''
+    Purpose: to extract 2 items from days that had high correlation.
+             1: avg return for the period that generated a high corr.
+             2: return details by calendar year for period of high corr.
+    input: data = output from func SeasonCorrTest,
+           pxData=price data from which to pull the %returns,
+                  preferably from output of func byStockAndYear.
+           periods=rolling time frame used in data.
+    return: 3 level dictionary with the average return for the rolling
+                period and all the percent returns by year for the period.
+            level 1 key = 'ticker'
+            level 2 key = 'DayN' where N=int() of the day analyzed
+            level 3 key = 2 keys: key1='AvgReturn', key2='ReturnDetails'
+    '''
+    request = {}
+    for stock, data in data.items():
+        requestValue = {}
+        for day in data:
+            dataValue = {}
+            # px at the day at which the high correlation occured
+            end = pxData[stock].loc[day]
+            # px N days prior to end day
+            start = pxData[stock].loc[(day-periods)]
+            pctChange = (end-start) / start
+            dataValue['AvgReturn'] = round(pctChange.mean()*100, 2)
+            dataValue['ReturnDetails'] = round(pctChange*100, 2)
+            requestValue[f'Day{day}'] = dataValue
+        request[stock] = requestValue
+    return request
         
+def ExecSummaryCorr(data, printupdate=False):
+    '''
+    input: data = returned item from func PctReturnForDays
+    output: 3 level dictionary
+        level 1 keys = ticker
+        level 1 value = dict
+        level 2 keys = 'DayN' where the day with results
+        level 2 value = dict
+        level 3 keys = 'TotalTrades', 'NumPos', 'NumNeg',
+                       'AvgReturnOnPos', 'AvgReturnOnNeg'
+        level 3 value = results
+    kwargs: printupdate = will print 'load' status
+    '''
+    request = {}
+    status = 0
+    outOf = len(data.keys())
+    for stock, days in data.items():
+        if printupdate == True:
+            print(f'{status}/{outOf}', end=' | ')
+            status += 1
+        requestValue = {}
+        for day, details in days.items():
+            value = {}
+            data = details['ReturnDetails']
+            posTest = data > 0
+            daysPos = data[posTest].count()
+            daysNeg = data.count() - daysPos
+            value['TotalTrades'] = data.count()
+            value['NumPos'] = daysPos
+            value['NumNeg'] = daysNeg
+            value['AvgReturnOnPos'] = round(data[posTest].mean(),2)
+            value['AvgReturnOnNeg'] = round(data[data<0].mean(),2)
+            requestValue[day] = value
+        request[stock] = requestValue
+    if printupdate == True:
+        print()
+    return request
+            
+
 def CycleRollingCharts(data):
     '''
     Input: byStockAndYear[ticker]
