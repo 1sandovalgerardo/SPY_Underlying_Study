@@ -172,7 +172,10 @@ def PctReturnForDays(data, pxData, periods):
             # px at the day at which the high correlation occured
             end = pxData[stock].loc[day]
             # px N days prior to end day
-            start = pxData[stock].loc[(day-periods)]
+            if (day-periods) < 1:
+                start = pxData[stock].loc[(day-periods+1)]
+            else:
+                start = pxData[stock].loc[(day-periods)]
             pctChange = (end-start) / start
             dataValue['AvgReturn'] = round(pctChange.mean()*100, 2)
             dataValue['ReturnDetails'] = round(pctChange*100, 2)
@@ -201,20 +204,21 @@ def ExecSummaryCorr(data, printupdate=False):
         if printupdate:
             print(f'{status}/{outOf}', end=' | ')
             status += 1
-        requestValue = {}
-        for day, details in days.items():
-            value = {}
-            data = details['ReturnDetails']
-            posTest = data > 0
-            daysPos = data[posTest].count()
-            daysNeg = data.count() - daysPos
-            value['TotalTrades'] = data.count()
-            value['NumPos'] = daysPos
-            value['NumNeg'] = daysNeg
-            value['AvgReturnOnPos'] = round(data[posTest].mean(), 2)
-            value['AvgReturnOnNeg'] = round(data[data < 0].mean(), 2)
-            requestValue[day] = value
-        request[stock] = requestValue
+        if len(days) >= 1:
+            requestValue = {}
+            for day, details in days.items():
+                value = {}
+                data = details['ReturnDetails']
+                posTest = data > 0
+                daysPos = data[posTest].count()
+                daysNeg = data.count() - daysPos
+                value['TotalTrades'] = data.count()
+                value['NumPos'] = daysPos
+                value['NumNeg'] = daysNeg
+                value['AvgReturnOnPos'] = round(data[posTest].mean(), 2)
+                value['AvgReturnOnNeg'] = round(data[data < 0].mean(), 2)
+                requestValue[day] = value
+            request[stock] = requestValue
     if printupdate:
         print()
     return request
