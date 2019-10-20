@@ -12,7 +12,7 @@ import numpy as np
 import CorrHelpers as ch
 
 baseDir = os.getcwd()
-dataLocation = 'data/Master_Data.csv'
+dataLocation = 'data/small_closepx_data.csv'
 dataFilePath = os.path.join(baseDir, dataLocation)
 
 roughData = pd.read_csv(dataFilePath, index_col=0)
