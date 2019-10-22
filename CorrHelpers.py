@@ -188,8 +188,14 @@ def PctReturnForDays(data, pxData, periods):
             # px at the day at which the high correlation occured
             end = pxData[stock].loc[day]
             # px N days prior to end day
-            if (day-periods) < 1:
+            if (day-periods) == 0:
                 start = pxData[stock].loc[(day-periods+1)]
+            elif day < periods:
+                remainder = periods-day
+                # find max of index for pxData
+                endYearDay = max(pxData[stock].index)
+                i = endYearDay - remainder
+                start = pxData[stock].loc[i]
             else:
                 start = pxData[stock].loc[(day-periods)]
             pctChange = (end-start) / start
@@ -228,6 +234,7 @@ def ExecSummaryCorr(data, printupdate=False):
                 posTest = data > 0
                 daysPos = data[posTest].count()
                 daysNeg = data.count() - daysPos
+                value['StartDay'] = details['StartDay']
                 value['TotalTrades'] = data.count()
                 value['NumPos'] = daysPos
                 value['NumNeg'] = daysNeg
