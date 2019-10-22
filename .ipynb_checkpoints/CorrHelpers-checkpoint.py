@@ -190,14 +190,17 @@ def PctReturnForDays(data, pxData, periods):
             # px N days prior to end day
             if (day-periods) == 0:
                 start = pxData[stock].loc[(day-periods+1)]
+                dataValue['StartDay'] = day-periods+1
             elif day < periods:
                 remainder = periods-day
                 # find max of index for pxData
                 endYearDay = max(pxData[stock].index)
                 i = endYearDay - remainder
                 start = pxData[stock].loc[i]
+                dataValue['StartDay'] = i
             else:
                 start = pxData[stock].loc[(day-periods)]
+                dataValue['StartDay'] = day-periods
             pctChange = (end-start) / start
             dataValue['AvgReturn'] = round(pctChange.mean()*100, 2)
             dataValue['ReturnDetails'] = round(pctChange*100, 2)
@@ -234,6 +237,7 @@ def ExecSummaryCorr(data, printupdate=False):
                 posTest = data > 0
                 daysPos = data[posTest].count()
                 daysNeg = data.count() - daysPos
+                value['StartDay'] = details['StartDay']
                 value['StartDay'] = details['StartDay']
                 value['TotalTrades'] = data.count()
                 value['NumPos'] = daysPos
