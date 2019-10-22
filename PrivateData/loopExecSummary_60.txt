@@ -1,0 +1,288 @@
+MSFT from: 184 to: Day244
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 11.92 | Avg Return on Neg: -16.4
+
+MSFT from: 185 to: Day245
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 12.8 | Avg Return on Neg: -17.32
+
+GOOG from: 154 to: Day214
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.58 | Avg Return on Neg: -10.88
+
+GOOG from: 156 to: Day216
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.23 | Avg Return on Neg: -13.48
+
+GOOG from: 157 to: Day217
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 19.63 | Avg Return on Neg: -13.09
+
+GOOG from: 163 to: Day223
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 22.26 | Avg Return on Neg: -15.87
+
+GOOG from: 168 to: Day228
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 23.06 | Avg Return on Neg: -17.14
+
+GOOG from: 169 to: Day229
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 23.1 | Avg Return on Neg: -15.32
+
+GOOG from: 170 to: Day230
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 21.18 | Avg Return on Neg: -14.69
+
+GOOG from: 171 to: Day231
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 22.55 | Avg Return on Neg: -15.56
+
+GOOG from: 174 to: Day234
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 21.24 | Avg Return on Neg: -14.16
+
+GOOG from: 178 to: Day238
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.17 | Avg Return on Neg: -13.49
+
+GOOG from: 179 to: Day239
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 19.29 | Avg Return on Neg: -13.65
+
+GOOGL from: 154 to: Day214
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.49 | Avg Return on Neg: -10.97
+
+GOOGL from: 156 to: Day216
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.12 | Avg Return on Neg: -13.41
+
+GOOGL from: 157 to: Day217
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 19.45 | Avg Return on Neg: -13.04
+
+GOOGL from: 168 to: Day228
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 22.76 | Avg Return on Neg: -17.45
+
+GOOGL from: 169 to: Day229
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 22.86 | Avg Return on Neg: -15.73
+
+GOOGL from: 170 to: Day230
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 20.92 | Avg Return on Neg: -15.16
+
+GOOGL from: 171 to: Day231
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 22.23 | Avg Return on Neg: -16.21
+
+GOOGL from: 178 to: Day238
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 19.62 | Avg Return on Neg: -13.84
+
+GOOGL from: 179 to: Day239
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 18.74 | Avg Return on Neg: -13.87
+
+NFLX from: 236 to: Day46
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 41.86 | Avg Return on Neg: -18.16
+
+NFLX from: 237 to: Day47
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 42.82 | Avg Return on Neg: -17.51
+
+NFLX from: 238 to: Day48
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 40.7 | Avg Return on Neg: -16.92
+
+NFLX from: 239 to: Day49
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 36.85 | Avg Return on Neg: -21.46
+
+NFLX from: 240 to: Day50
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 37.59 | Avg Return on Neg: -22.26
+
+NFLX from: 161 to: Day221
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 27.92 | Avg Return on Neg: -32.12
+
+NFLX from: 162 to: Day222
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 31.15 | Avg Return on Neg: -36.68
+
+NFLX from: 163 to: Day223
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 30.2 | Avg Return on Neg: -38.66
+
+NKE from: 161 to: Day221
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 16.56 | Avg Return on Neg: -12.44
+
+NKE from: 163 to: Day223
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 14.92 | Avg Return on Neg: -19.27
+
+NKE from: 164 to: Day224
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 16.74 | Avg Return on Neg: -12.32
+
+NKE from: 166 to: Day226
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 16.19 | Avg Return on Neg: -13.32
+
+NKE from: 167 to: Day227
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 17.04 | Avg Return on Neg: -11.67
+
+NKE from: 172 to: Day232
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 17.53 | Avg Return on Neg: -10.77
+
+NKE from: 173 to: Day233
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 17.25 | Avg Return on Neg: -9.63
+
+NKE from: 174 to: Day234
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 17.37 | Avg Return on Neg: -7.22
+
+NKE from: 175 to: Day235
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 15.91 | Avg Return on Neg: -8.01
+
+NKE from: 176 to: Day236
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 15.32 | Avg Return on Neg: -7.04
+
+BKNG from: 248 to: Day58
+Total Trades:13 | Number Positive: 12 | Number Negative: 1
+Avg Return on Pos: 15.57 | Avg Return on Neg: -0.82
+
+BKNG from: 249 to: Day59
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 16.21 | Avg Return on Neg: -1.23
+
+BKNG from: 3 to: Day63
+Total Trades:13 | Number Positive: 13 | Number Negative: 0
+Avg Return on Pos: 16.11 | Avg Return on Neg: nan
+
+BKNG from: 5 to: Day65
+Total Trades:13 | Number Positive: 13 | Number Negative: 0
+Avg Return on Pos: 17.18 | Avg Return on Neg: nan
+
+AXP from: 191 to: Day1
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 11.65 | Avg Return on Neg: -22.34
+
+AXP from: 192 to: Day2
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 11.16 | Avg Return on Neg: -22.11
+
+AXP from: 193 to: Day3
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 12.07 | Avg Return on Neg: -21.83
+
+AXP from: 190 to: Day250
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 10.96 | Avg Return on Neg: -23.19
+
+BLK from: 156 to: Day216
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 13.11 | Avg Return on Neg: -16.56
+
+BLK from: 157 to: Day217
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 13.22 | Avg Return on Neg: -15.97
+
+BLK from: 158 to: Day218
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 11.1 | Avg Return on Neg: -23.74
+
+VRTX from: 230 to: Day40
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 23.37 | Avg Return on Neg: -30.16
+
+VRTX from: 231 to: Day41
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 23.85 | Avg Return on Neg: -31.2
+
+PAYX from: 153 to: Day213
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 10.86 | Avg Return on Neg: -11.8
+
+EFX from: 187 to: Day247
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 13.47 | Avg Return on Neg: -14.47
+
+EFX from: 188 to: Day248
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 13.72 | Avg Return on Neg: -12.54
+
+EFX from: 189 to: Day249
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 14.07 | Avg Return on Neg: -14.66
+
+JKHY from: 153 to: Day213
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 12.61 | Avg Return on Neg: -11.14
+
+JKHY from: 154 to: Day214
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 11.59 | Avg Return on Neg: -11.2
+
+JKHY from: 155 to: Day215
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 11.28 | Avg Return on Neg: -12.64
+
+JKHY from: 156 to: Day216
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 11.68 | Avg Return on Neg: -13.05
+
+JKHY from: 157 to: Day217
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 10.88 | Avg Return on Neg: -10.14
+
+JKHY from: 158 to: Day218
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 9.28 | Avg Return on Neg: -13.03
+
+JKHY from: 159 to: Day219
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 9.84 | Avg Return on Neg: -11.44
+
+SEE from: 191 to: Day1
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 15.63 | Avg Return on Neg: -18.38
+
+SEE from: 192 to: Day2
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 15.32 | Avg Return on Neg: -18.06
+
+SEE from: 193 to: Day3
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 14.85 | Avg Return on Neg: -19.12
+
+SEE from: 194 to: Day4
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 15.2 | Avg Return on Neg: -20.12
+
+SEE from: 189 to: Day249
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 14.66 | Avg Return on Neg: -17.68
+
+SEE from: 190 to: Day250
+Total Trades:13 | Number Positive: 10 | Number Negative: 3
+Avg Return on Pos: 16.12 | Avg Return on Neg: -18.21
+
+HP from: 189 to: Day249
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 18.3 | Avg Return on Neg: -41.5
+
+HP from: 190 to: Day250
+Total Trades:13 | Number Positive: 11 | Number Negative: 2
+Avg Return on Pos: 19.64 | Avg Return on Neg: -38.1
+
